@@ -1,0 +1,14 @@
+import { render, screen } from "@testing-library/react";
+import ProgrammingLanguagesList from "../../src/components/ProgrammingLanguagesList";
+
+describe("ProgrammingLanguagesList()", () => {
+  it("should render a list of programming languages", () => {
+    const languages = ["JavaScript", "Python", "Java", "Ruby", "Golang"];
+
+    render(<ProgrammingLanguagesList languages={languages} />);
+
+    languages.forEach((language) => {
+      expect(screen.getByText(language)).toBeInTheDocument();
+    });
+  });
+});
