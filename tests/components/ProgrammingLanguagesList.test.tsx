@@ -11,4 +11,10 @@ describe("ProgrammingLanguagesList()", () => {
       expect(screen.getByText(language)).toBeInTheDocument();
     });
   });
+
+  it("should render a message when the list is empty", () => {
+    render(<ProgrammingLanguagesList languages={[]} />);
+
+    expect(screen.getByText(/No languages/i)).toBeInTheDocument();
+  });
 });
