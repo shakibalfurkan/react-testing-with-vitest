@@ -1,9 +1,13 @@
-import TodoList from "./components/TodoList/TodoList";
+import Counter from "./components/Counter/Counter";
+import Greeting from "./components/Greeting/Greeting";
+import UserProfile from "./components/UserProfile/UserProfile";
 
 function App() {
   return (
     <section>
-      <TodoList />
+      <Greeting name={"Pedro"} />
+      <Counter />
+      <UserProfile userId={4} />
     </section>
   );
 }
