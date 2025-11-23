@@ -5,7 +5,7 @@ import UserProfile from "./components/UserProfile/UserProfile";
 function App() {
   return (
     <section>
-      <Greeting name={"Pedro"} />
+      <Greeting name={"Shakib"} />
       <Counter />
       <UserProfile userId={4} />
     </section>
